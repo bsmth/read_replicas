@@ -103,7 +103,7 @@ manually:
 
 - `-Xs` streams the contents of the WAL log as the backup of the primary is
   performed.
-- `-R` creates an empty file named `standby.signal` in the replica’s data
+- `-R` creates an empty file named `standby.signal` in the replica's data
   directory. This file lets your replica cluster know that it should operate as
   a standby server. The `-R` option also adds the connection information about
   the primary server to the `postgresql.auto.conf` file. This is a special
