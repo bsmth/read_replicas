@@ -55,11 +55,11 @@ not open for SQL reads in a warm standby configuration.
 
 Log shipping has a low overhead in terms of network and compute resources
 because the WAL is sent in batches and is processed in bulk. In contrast,
-streaming replication works by continuously sending WAL records over network
+streaming replication works by continuously sending WAL records over the network
 connection from the primary to the standbys. In more recent versions of
-PostgreSQL, a combination of both log shipping and streaming replication are
-employed simultaneously and provides _hot standby_ replicas where the hot
-standbys are suitable for read-only operations.
+PostgreSQL, a combination of log shipping and streaming replication is employed
+simultaneously and provides hot standby replicas available for read-only
+operations.
 
 The usual process for setting up read replicas in PostgreSQL is to provide a
 directory on the primary server where the primary stores archive files. It is
