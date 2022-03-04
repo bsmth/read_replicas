@@ -1,9 +1,10 @@
 # Database read replicas
 
-This document provides an overview of database read replicas and covers use
+This document provides an overview of database read replicas and covers the use
 cases where developers may want to use replication for their databases and web
 development environments. This document will focus on replication in PostgreSQL
-and apply it to your application architecture.
+and describes how to benefit from read replicas in a PostgreSQL-based application
+architecture.
 
 ## What are database read replicas?
 
