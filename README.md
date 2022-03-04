@@ -59,7 +59,7 @@ log shipping and streaming replication are employed simultaneously and provide
 hot standby replicas where the hot standbys are suitable for read-only
 operations.
 
-The usual process for setting up read replicas in Postgres is to provide a
+The usual process for setting up read replicas in PostgreSQL is to provide a
 directory on the primary server where the primary stores archive files. It is
 then provided server configuration that enables archiving and replication. This
 is done in the `postgresql.conf` file like the following example that turns on
